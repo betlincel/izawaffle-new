@@ -23,6 +23,7 @@ body {
     line-height: 1.6;
     background: #fafafa;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .container {
@@ -47,6 +48,22 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
+}
+
+@media (max-width: 576px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .logo-section {
+        width: 100%;
+    }
+    
+    .header-right {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 
 .header-right {
@@ -370,7 +387,7 @@ body {
 
 .category-card {
     position: relative;
-    border-radius: 0;
+    border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
@@ -391,7 +408,7 @@ body {
     overflow: hidden;
     position: relative;
     background: var(--light-pink);
-    border-radius: 0;
+    border-radius: 15px 15px 0 0;
 }
 
 .category-image {
@@ -421,7 +438,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     background: var(--white);
-    border-radius: 0;
+    border-radius: 0 0 15px 15px;
 }
 
 /* Detailed Menu Items */
@@ -609,7 +626,31 @@ body {
 .footer-map h3 {
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.maps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.map-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.map-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -617,8 +658,6 @@ body {
 
 .map-container {
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -688,6 +727,20 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 992px) {
+    .maps-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .hero-content .lead {
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .brand-name {
         font-size: 22px;
@@ -785,10 +838,46 @@ body {
     .map-container iframe {
         height: 250px;
     }
+    
+    .maps-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .map-item {
+        padding: 15px;
+    }
 
     .header-content {
         flex-wrap: wrap;
         gap: 15px;
+    }
+    
+    .hero-video {
+        height: 60vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem !important;
+    }
+    
+    .hero-content .lead {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    
+    .story-section,
+    .features,
+    .menu-categories,
+    .detailed-menu,
+    .branches-section,
+    .about {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .footer-content {
+        text-align: center;
     }
 }
 
@@ -811,6 +900,7 @@ body {
 
     .story-section {
         margin: 0 10px 30px;
+        padding: 40px 20px;
     }
 
     .category-image-wrapper {
@@ -824,14 +914,27 @@ body {
 
     .features {
         margin: 0 10px 30px;
+        padding: 30px 0;
     }
 
     .menu-categories {
         margin: 0 10px 30px;
+        padding: 30px 0;
+    }
+
+    .detailed-menu {
+        margin: 0 10px 30px;
+        padding: 30px 0;
     }
 
     .about {
         margin: 0 10px 30px;
+        padding: 40px 20px;
+    }
+
+    .branches-section {
+        margin: 0 10px 30px;
+        padding: 40px 20px;
     }
 
     .menu-grid {
@@ -854,6 +957,43 @@ body {
     .logo {
         width: 40px;
         height: 40px;
+    }
+    
+    .hero-video {
+        height: 50vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.75rem !important;
+    }
+    
+    .hero-content .lead {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+    
+    .maps-grid {
+        gap: 15px;
+    }
+    
+    .map-item h4 {
+        font-size: 16px;
+    }
+    
+    .map-container iframe {
+        height: 200px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .story-text {
+        font-size: 14px;
+    }
+    
+    .about-text {
+        font-size: 14px;
     }
 }
 
