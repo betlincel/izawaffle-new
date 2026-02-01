@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iza Waffle - QR Menü</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="logo.png" alt="Iza Waffle Logo" class="logo" id="logo">
+                    <h1 class="brand-name">Iza Waffle</h1>
+                </div>
+                <div class="header-right">
+                    <div class="social-media-header">
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="tr">TR</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-video">
+    <div class="video-wrapper">
+
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="carousel.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-overlay"></div>
+
+        <div class="hero-content text-center text-white">
+            <h1 class="display-2 fw-bold mb-4">Iza Waffle</h1>
+            <p class="lead">Taze hamur, gerçek meyveler ve bol çikolata ile hazırlanan eşsiz lezzet</p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <h2 class="section-title" data-tr="Iza Waffle'ın Hikayesi" data-en="Iza Waffle's Story">Iza Waffle'ın Hikayesi</h2>
+            <div class="story-content">
+                <p class="story-text" data-tr="Bilgi ve tecrübemizle Iza Waffle markasını kurduk. Klasik çeşitlerin dışına çıkmak için farklı tatlar ile başladık. Her zaman yeni tatlar için araştırmaya ve denemeye devam ediyoruz. Firmamızın hikayesi, tatlıya olan tutkumuzun birleştirici gücünü yansıtıyor. Iza Waffle bizler için sadece bir waffle markası değil, aynı zamanda bir tutku. Her bir ürünün arkasında titizlikle seçilen malzemeler ve ustalıkla işlenen lezzetlerimiz bulunmaktadır." data-en="We founded the Iza Waffle brand with our knowledge and experience. We started with different flavors to go beyond classic varieties. We continue to research and experiment for new flavors. Our company's story reflects the unifying power of our passion for desserts. Iza Waffle is not just a waffle brand for us, but also a passion. Behind each product are carefully selected ingredients and expertly processed flavors.">Bilgi ve tecrübemizle Iza Waffle markasını kurduk. Klasik çeşitlerin dışına çıkmak için farklı tatlar ile başladık. Her zaman yeni tatlar için araştırmaya ve denemeye devam ediyoruz. Firmamızın hikayesi, tatlıya olan tutkumuzun birleştirici gücünü yansıtıyor. Iza Waffle bizler için sadece bir waffle markası değil, aynı zamanda bir tutku. Her bir ürünün arkasında titizlikle seçilen malzemeler ve ustalıkla işlenen lezzetlerimiz bulunmaktadır.</p>
+                <div class="story-details">
+                    <div class="story-detail-item">
+                        <span class="story-label" data-tr="Kuruluş Yılı" data-en="Founded">Kuruluş Yılı</span>
+                        <span class="story-value">2020</span>
+                    </div>
+                    <div class="story-detail-item">
+                        <span class="story-label" data-tr="Kuruluş Yeri" data-en="Location">Kuruluş Yeri</span>
+                        <span class="story-value" data-tr="İstanbul, Türkiye" data-en="Istanbul, Turkey">İstanbul, Türkiye</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon mb-3">🍰</div>
+                        <h3 class="h5 fw-bold" data-tr="Günlük Üretim" data-en="Daily Production">Günlük Üretim</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon mb-3">🍓</div>
+                        <h3 class="h5 fw-bold" data-tr="Her Çeşit Sos" data-en="All Kinds of Sauces">Her Çeşit Sos</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon mb-3">✨</div>
+                        <h3 class="h5 fw-bold" data-tr="Bol Çeşit" data-en="Wide Variety">Bol Çeşit</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon mb-3">🌿</div>
+                        <h3 class="h5 fw-bold" data-tr="Doğal ve Katkısız" data-en="Natural and Additive-Free">Doğal ve Katkısız</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories - Grid Style -->
+    <section class="menu-categories py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-tr="Kategorilerimiz" data-en="Our Categories">Kategorilerimiz</h2>
+            
+            <div class="row g-4">
+                <!-- Waffle Category -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="category-card">
+                        <div class="category-image-wrapper">
+                            <img src="images/waffle-category.jpg" alt="Waffle" class="category-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="category-placeholder" style="display:none; background: linear-gradient(135deg, #ffe4e1 0%, #ffb6c1 100%); align-items: center; justify-content: center; font-size: 120px;">🧇</div>
+                        </div>
+                        <h3 class="category-name" data-tr="WAFFLE" data-en="WAFFLE">WAFFLE</h3>
+                    </div>
+                </div>
+
+                <!-- Ice Cream Category -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="category-card">
+                        <div class="category-image-wrapper">
+                            <img src="images/dondurma-category.jpg" alt="Dondurma" class="category-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="category-placeholder" style="display:none; background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%); align-items: center; justify-content: center; font-size: 120px;">🍦</div>
+                        </div>
+                        <h3 class="category-name" data-tr="DONDURMA" data-en="ICE CREAM">DONDURMA</h3>
+                    </div>
+                </div>
+
+                <!-- Beverages Category -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="category-card">
+                        <div class="category-image-wrapper">
+                            <img src="images/icecek-category.jpg" alt="İçecekler" class="category-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="category-placeholder" style="display:none; background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); align-items: center; justify-content: center; font-size: 120px;">☕</div>
+                        </div>
+                        <h3 class="category-name" data-tr="İÇECEKLER" data-en="BEVERAGES">İÇECEKLER</h3>
+                    </div>
+                </div>
+
+                <!-- Pastries Category -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="category-card">
+                        <div class="category-image-wrapper">
+                            <img src="images/pasta-category.jpg" alt="Pastalar" class="category-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="category-placeholder" style="display:none; background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%); align-items: center; justify-content: center; font-size: 120px;">🍰</div>
+                        </div>
+                        <h3 class="category-name" data-tr="PASTALAR" data-en="PASTRIES">PASTALAR</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Menu Items -->
+    <section class="detailed-menu py-5">
+        <div class="container">
+            <!-- Waffle Items -->
+            <div class="menu-category-section mb-5">
+                <h2 class="section-title text-center mb-4" data-tr="Waffle Çeşitleri" data-en="Waffle Varieties">Waffle Çeşitleri</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="menu-item-card">
+                            <div class="menu-item-image">
+                                <img src="images/cilekli-waffle.jpg" alt="Çilekli Waffle" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <span style="display:none; font-size:64px;">🍓</span>
+                            </div>
+                            <h4 class="menu-item-name" data-tr="Çilekli Waffle" data-en="Strawberry Waffle">Çilekli Waffle</h4>
+                            <p class="menu-item-price">₺45</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="menu-item-card">
+                            <div class="menu-item-image">
+                                <img src="images/muzlu-waffle.jpg" alt="Muzlu Waffle" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <span style="display:none; font-size:64px;">🍌</span>
+                            </div>
+                            <h4 class="menu-item-name" data-tr="Muzlu Waffle" data-en="Banana Waffle">Muzlu Waffle</h4>
+                            <p class="menu-item-price">₺40</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="menu-item-card">
+                            <div class="menu-item-image">
+                                <img src="images/cikolatali-waffle.jpg" alt="Çikolatalı Waffle" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <span style="display:none; font-size:64px;">🍫</span>
+                            </div>
+                            <h4 class="menu-item-name" data-tr="Çikolatalı Waffle" data-en="Chocolate Waffle">Çikolatalı Waffle</h4>
+                            <p class="menu-item-price">₺42</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="menu-item-card">
+                            <div class="menu-item-image">
+                                <img src="images/fistikli-waffle.jpg" alt="Fıstıklı Waffle" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <span style="display:none; font-size:64px;">🥜</span>
+                            </div>
+                            <h4 class="menu-item-name" data-tr="Fıstıklı Waffle" data-en="Pistachio Waffle">Fıstıklı Waffle</h4>
+                            <p class="menu-item-price">₺48</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="menu-item-card">
+                            <div class="menu-item-image">
+                                <img src="images/yaban-mersinli-waffle.jpg" alt="Yaban Mersinli Waffle" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <span style="display:none; font-size:64px;">🫐</span>
+                            </div>
+                            <h4 class="menu-item-name" data-tr="Yaban Mersinli Waffle" data-en="Blueberry Waffle">Yaban Mersinli Waffle</h4>
+                            <p class="menu-item-price">₺46</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="menu-item-card">
+                            <div class="menu-item-image">
+                                <img src="images/bal-cevizli-waffle.jpg" alt="Bal ve Cevizli Waffle" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <span style="display:none; font-size:64px;">🍯</span>
+                            </div>
+                            <h4 class="menu-item-name" data-tr="Bal ve Cevizli Waffle" data-en="Honey and Walnut Waffle">Bal ve Cevizli Waffle</h4>
+                            <p class="menu-item-price">₺44</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section class="branches-section">
+        <div class="container">
+            <h2 class="section-title" data-tr="Şubelerimiz" data-en="Our Branches">Şubelerimiz</h2>
+            <div class="branches-grid">
+                <div class="branch-item">
+                    <h3 data-tr="İstanbul - Beşiktaş" data-en="Istanbul - Besiktas">İstanbul - Beşiktaş</h3>
+                    <p class="branch-address" data-tr="Beşiktaş Merkez, İstanbul" data-en="Besiktas Center, Istanbul">Beşiktaş Merkez, İstanbul</p>
+                    <p class="branch-phone">+90 (212) XXX XX XX</p>
+                </div>
+                <div class="branch-item">
+                    <h3 data-tr="İstanbul - Kadıköy" data-en="Istanbul - Kadikoy">İstanbul - Kadıköy</h3>
+                    <p class="branch-address" data-tr="Kadıköy Merkez, İstanbul" data-en="Kadikoy Center, Istanbul">Kadıköy Merkez, İstanbul</p>
+                    <p class="branch-phone">+90 (216) XXX XX XX</p>
+                </div>
+                <div class="branch-item">
+                    <h3 data-tr="Ankara - Çankaya" data-en="Ankara - Cankaya">Ankara - Çankaya</h3>
+                    <p class="branch-address" data-tr="Çankaya Merkez, Ankara" data-en="Cankaya Center, Ankara">Çankaya Merkez, Ankara</p>
+                    <p class="branch-phone">+90 (312) XXX XX XX</p>
+                </div>
+                <div class="branch-item">
+                    <h3 data-tr="İzmir - Konak" data-en="Izmir - Konak">İzmir - Konak</h3>
+                    <p class="branch-address" data-tr="Konak Merkez, İzmir" data-en="Konak Center, Izmir">Konak Merkez, İzmir</p>
+                    <p class="branch-phone">+90 (232) XXX XX XX</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title" data-tr="Enfes Waffle Lezzeti" data-en="Delicious Waffle Taste">Enfes Waffle Lezzeti</h2>
+            <h3 class="about-subtitle" data-tr="Gerçek Meyveler ve Renkli Tatlar" data-en="Real Fruits and Colorful Tastes">Gerçek Meyveler ve Renkli Tatlar</h3>
+            <p class="about-text" data-tr="Iza Waffle ailesi olarak, ürünlerimizde kullandığımız taze ve doğal meyveler, en özel çikolatalar ile lezzetin gerçek tadına varmanızı sağlıyoruz. Aroma verici veya herhangi bir katkı maddesi kullanmıyoruz. Waffle tatlılarımızı, dünyaca ünlü çikolata markalarının en özel çikolatalarıyla kaplıyoruz. Farklı meyveler ve çikolatalar kullanarak hazırladığımız çeşitli waffle'larımız mevcut. Tatlılarımızı, her gün taze olarak hijyenik koşullarda üretiyoruz." data-en="As the Iza Waffle family, we ensure you experience the real taste of flavor with the fresh and natural fruits and the most special chocolates we use in our products. We do not use flavor enhancers or any additives. We coat our waffle desserts with the most special chocolates from world-famous chocolate brands. We have various waffles prepared using different fruits and chocolates. We produce our desserts fresh every day under hygienic conditions.">Iza Waffle ailesi olarak, ürünlerimizde kullandığımız taze ve doğal meyveler, en özel çikolatalar ile lezzetin gerçek tadına varmanızı sağlıyoruz. Aroma verici veya herhangi bir katkı maddesi kullanmıyoruz. Waffle tatlılarımızı, dünyaca ünlü çikolata markalarının en özel çikolatalarıyla kaplıyoruz. Farklı meyveler ve çikolatalar kullanarak hazırladığımız çeşitli waffle'larımız mevcut. Tatlılarımızı, her gün taze olarak hijyenik koşullarda üretiyoruz.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-tr="İletişim" data-en="Contact">İletişim</h3>
+                    <p class="footer-text">info@izawaffle.com</p>
+                    <p class="footer-text">+90 (XXX) XXX XX XX</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-tr="Adres" data-en="Address">Adres</h3>
+                    <p class="footer-text" data-tr="Adres bilgisi buraya eklenecek" data-en="Address information will be added here">Adres bilgisi buraya eklenecek</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-tr="Çalışma Saatleri" data-en="Working Hours">Çalışma Saatleri</h3>
+                    <p class="footer-text" data-tr="Haftanın Her Günü 9.00-22.00" data-en="Every Day of the Week 9:00-22:00">Haftanın Her Günü 9.00-22.00</p>
+                </div>
+            </div>
+            <div class="footer-map">
+    <h3 data-tr="Konumumuz" data-en="Our Location">Konumumuz</h3>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=40.163034624201956,34.374709362276086&hl=tr&z=16&output=embed"
+            width="100%" 
+            height="300" 
+            style="border:0; border-radius: 10px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+            </div>
+            <div class="footer-social">
+                <h3 data-tr="Bizi Takip Edin" data-en="Follow Us">Bizi Takip Edin</h3>
+                <div class="social-media-footer">
+                    <a href="#" class="social-icon-footer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon-footer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon-footer" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon-footer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon-footer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Iza Waffle. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm hakları saklıdır.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
